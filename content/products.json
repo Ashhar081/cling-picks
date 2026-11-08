@@ -1,0 +1,54 @@
+{
+  "_instructions": "Only real, search-verified Amazon.in ASINs. Replace YOURTAG-21 with the real Associates tag after approval. Prices are approximations from listings/videos; verify live before an article goes live.",
+  "products": [
+    {
+      "id": "ritu-collection-kurta-palazzo-set",
+      "name": "Ritu Collection Women's Rayon Printed Kurta, Palazzo & Dupatta Set",
+      "category": "kurti set",
+      "category_slug": "ethnic-wear",
+      "subcategory": "Kurta Palazzo Sets",
+      "footprint": "3-piece rayon set: printed kurta, palazzo and cotton malmal dupatta; 3/4 sleeves; positioned under Rs 500 with coupons",
+      "price_range": "approx Rs 475-490 with coupons (verify live)",
+      "specs": {
+        "Fabric": "Rayon kurta & palazzo, cotton malmal dupatta",
+        "Pieces": "Kurta + Palazzo + Dupatta",
+        "Sleeve": "3/4 sleeve",
+        "Budget": "Under Rs 500 with coupons"
+      },
+      "url": "https://www.amazon.in/dp/B09P7373PG?tag=YOURTAG-21",
+      "image": ""
+    },
+    {
+      "id": "campus-roar-sneakers",
+      "name": "Campus Roar Sneakers (White/Green)",
+      "category": "sneakers",
+      "category_slug": "footwear",
+      "subcategory": "Sneakers",
+      "footprint": "Budget everyday sneaker, widely positioned under Rs 1,000 in reviews",
+      "price_range": "under Rs 1,000 (verify live)",
+      "specs": {
+        "Colourway": "White/Green",
+        "Use": "Everyday casual",
+        "Budget": "Under Rs 1,000"
+      },
+      "url": "https://www.amazon.in/dp/B0FCYPC91V?tag=YOURTAG-21",
+      "image": ""
+    },
+    {
+      "id": "campus-og23-pro-sneakers",
+      "name": "Campus OG-23 PRO Sneakers (White/Light Grey)",
+      "category": "sneakers",
+      "category_slug": "footwear",
+      "subcategory": "Sneakers",
+      "footprint": "Everyday white sneaker from Campus's OG line, popular budget pick",
+      "price_range": "budget segment (verify live)",
+      "specs": {
+        "Colourway": "White/Light Grey",
+        "Use": "Everyday casual",
+        "Line": "Campus OG-23 PRO"
+      },
+      "url": "https://www.amazon.in/dp/B0F8R2YP4C?tag=YOURTAG-21",
+      "image": ""
+    }
+  ]
+}

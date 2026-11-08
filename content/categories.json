@@ -1,0 +1,47 @@
+{
+  "_instructions": "category_slug in products.json must match a slug below; subcategory must match EXACTLY.",
+  "categories": [
+    {
+      "slug": "ethnic-wear",
+      "name": "Ethnic Wear",
+      "subcategories": [
+        "Kurti Sets",
+        "Kurta Palazzo Sets",
+        "Kurtis"
+      ]
+    },
+    {
+      "slug": "western-tops",
+      "name": "Western Tops",
+      "subcategories": [
+        "Oversized T-Shirts",
+        "Tops & Blouses"
+      ]
+    },
+    {
+      "slug": "footwear",
+      "name": "Footwear",
+      "subcategories": [
+        "Sneakers",
+        "Casual Shoes"
+      ]
+    },
+    {
+      "slug": "accessories",
+      "name": "Accessories",
+      "subcategories": [
+        "Earrings",
+        "Handbags",
+        "Watches"
+      ]
+    },
+    {
+      "slug": "beauty",
+      "name": "Beauty",
+      "subcategories": [
+        "Skincare",
+        "Makeup"
+      ]
+    }
+  ]
+}
