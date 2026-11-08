@@ -25,7 +25,6 @@ const PRODUCTS_PATH = path.join(ROOT, "content/products.json");
 const CATEGORIES_PATH = path.join(ROOT, "content/categories.json");
 const FIREBASE_CONFIG_PATH = path.join(ROOT, "content/firebase-config.json");
 
-const BUY_ME_A_COFFEE_URL = "https://ko-fi.com/umk161918";
 
 fs.mkdirSync(DOCS_ARTICLES_DIR, { recursive: true });
 fs.mkdirSync(AI_IMAGE_DIR, { recursive: true });
@@ -121,7 +120,7 @@ function aiPromptFor(category, subject, variationKey) {
   const variant = COMPOSITION_VARIANTS[seedFromString(variationKey) % COMPOSITION_VARIANTS.length];
   return (
     `professional product photograph of ${safeSubject}, a ${category.toLowerCase()}, ` +
-    `${variant}, placed in a small modern home office, clean tidy desk, soft natural window light, ` +
+    `${variant}, styled as a bright fashion flat-lay on a clean colored background, soft natural light, ` +
     `neutral warm tones, photorealistic, sharp focus on the item, no text, no logos, no brand names, no people, no watermarks`
   );
 }
@@ -610,7 +609,7 @@ const indexBody = `<div style="padding: 32px 0 4px;">
     <div>
       <div class="section-head"><h2>Latest Guides</h2></div>
       <div class="card-grid">
-        ${gridHtml || '<p style="color:var(--text-faint)">New guides publish twice daily. Check back soon.</p>'}
+        ${gridHtml || '<p style="color:var(--text-faint)">New picks publish twice a week. Check back soon.</p>'}
       </div>
       <div id="no-results" class="no-results">No guides match your search.</div>
     </div>
@@ -643,14 +642,12 @@ const aboutBody = `<div class="article-header">
     <h1>About &amp; Affiliate Disclosure</h1>
   </div>
   <article class="body" style="max-width:760px;">
-    <p>${SITE_NAME} publishes practical, tested-on-paper guidance for setting up a real, functional home office in a small apartment, dorm, or shared room — no spare room required.</p>
+    <p>${SITE_NAME} is a budget fashion and beauty guide for India. We hunt down kurti sets, tops, sneakers, accessories and beauty products that look premium but cost less, and write honest buying guides, comparisons and "what actually looks good in person" reviews.</p>
     <h2>Affiliate Disclosure</h2>
-    <p>${SITE_NAME} is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. As an Amazon Associate, we earn from qualifying purchases. This comes at no additional cost to you.</p>
+    <p>${SITE_NAME} is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.in. As an Amazon Associate, we earn from qualifying purchases. This comes at no additional cost to you.</p>
     <p>Product recommendations are based on publicly available specifications, pricing, and customer review data. We do not receive products for free from manufacturers in exchange for coverage.</p>
     <h2>About our images</h2>
     <p>Where we don't yet have a real, human-verified product photo, articles display clearly labeled AI-generated reference illustrations instead — never a fabricated depiction of the actual product. Always check the Amazon listing via the buy link for real product photos before purchasing.</p>
-    <h2>Contact</h2>
-    <p>Questions or corrections: use the contact method listed in this site's footer or repository.</p>
   </article>`;
 fs.writeFileSync(
   path.join(DOCS_DIR, "about.html"),
@@ -664,21 +661,18 @@ fs.writeFileSync(
 );
 
 const supportBody = `<div class="article-header">
-    <div class="eyebrow">Support</div>
-    <h1>Buy Us a Coffee</h1>
+    <div class="eyebrow">Contact</div>
+    <h1>Questions &amp; Corrections</h1>
   </div>
   <article class="body" style="max-width:640px;">
-    <p>${SITE_NAME} is an independent, one-person project. Every guide is researched, written, and published to help people set up a real, functional home office in a small space — without pushy sales tactics or fake reviews.</p>
-    <p>If a guide saved you time, helped you make a better purchase, or just made your small-space setup a little nicer, you can support the site by buying us a coffee. It genuinely helps cover hosting, tools, and the time spent keeping recommendations accurate and honest.</p>
-    <p>Every contribution, big or small, goes directly toward keeping this site independent and ad-free beyond our Amazon affiliate disclosures.</p>
-    <a class="btn-primary" href="${BUY_ME_A_COFFEE_URL}" target="_blank" rel="noopener" style="margin-top:12px;">☕ Buy Me a Coffee</a>
-    <p style="margin-top:32px; font-size:.85rem; color:var(--text-faint);">Support is entirely optional and never required to access any guide, comparison, or recommendation on this site.</p>
+    <p>Spotted a wrong price, a dead link, or a product that doesn't look like its listing? We want to know. Corrections keep every guide on this site honest.</p>
+    <p>Leave a comment on any guide, or raise it in the site's GitHub repository issues.</p>
   </article>`;
 fs.writeFileSync(
   path.join(DOCS_DIR, "support.html"),
   pageShell({
-    title: `Support Us — ${SITE_NAME}`,
-    description: "Support The Compact Office with a small donation",
+    title: `Contact — ${SITE_NAME}`,
+    description: "Contact Cling Picks: corrections and questions",
     bodyHtml: supportBody,
     comingSoonText,
     categories,

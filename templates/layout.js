@@ -1,5 +1,5 @@
-export const SITE_NAME = "The Compact Office";
-export const SITE_TAGLINE = "Smart Workspace Reviews";
+export const SITE_NAME = "Cling Picks";
+export const SITE_TAGLINE = "Budget fashion finds that stick with you";
 export const SITE_URL = "https://ashhar081.github.io/cling-picks";
 
 function head(title, description) {
@@ -9,7 +9,8 @@ function head(title, description) {
 <meta name="description" content="${description}">
 <base href="${SITE_URL}/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VSH1ZQFS9Q"></script>
@@ -21,10 +22,23 @@ function head(title, description) {
 </script>`;
 }
 
+const MARQUEE_WORDS = [
+  "NEW PICKS EVERY WEEK",
+  "BUDGET FASHION",
+  "REAL FINDS",
+  "NO FAKE HYPE",
+  "UNDER ₹999",
+  "KURTI SETS",
+  "SNEAKERS",
+  "BEAUTY",
+];
+
 function header() {
+  const marquee = MARQUEE_WORDS.concat(MARQUEE_WORDS)
+    .map((w) => `<span>${w}</span><span class="dot">&bull;</span>`)
+    .join("");
   return `<header class="site-header">
     <div class="wrap navbar">
-
       <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle categories menu">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <line x1="3" y1="6" x2="21" y2="6"/>
@@ -32,31 +46,23 @@ function header() {
           <line x1="3" y1="18" x2="21" y2="18"/>
         </svg>
       </button>
-
       <a class="brand" href="index.html">
-        <span class="brand-title">${SITE_NAME}</span>
-        <span class="brand-tagline">${SITE_TAGLINE}</span>
+        <span class="brand-title">CLING PICKS</span>
+        <span class="brand-tagline">stick by your style</span>
       </a>
-
       <nav class="main-nav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="support.html">Buy a Coffee</a>
       </nav>
-
       <div class="header-search">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <circle cx="11" cy="11" r="8"/>
           <path d="m21 21-4.35-4.35"/>
         </svg>
-
-        <input
-          id="site-search"
-          type="text"
-          placeholder="Search guides...">
+        <input id="site-search" type="text" placeholder="Search picks...">
       </div>
-
     </div>
+    <div class="tape-marquee" aria-hidden="true"><div class="tape-marquee-track">${marquee}</div></div>
   </header>`;
 }
 
@@ -68,19 +74,24 @@ function sideNav(categories = [], activeSlug = null) {
     })
     .join("\n");
   return `<aside class="side-nav" id="side-nav">
-  <div class="side-nav-title">Categories</div>
+  <div class="side-nav-title">Browse</div>
   ${items}
 </aside>`;
 }
 
 function footer(comingSoonText) {
   const comingSoonHtml = comingSoonText
-    ? `<div class="coming-soon">📦 Coming soon: our guide on <span class="coming-soon-pulse">${comingSoonText}</span></div>`
+    ? `<div class="coming-soon">NEW SOON: our guide on <span class="coming-soon-pulse">${comingSoonText}</span></div>`
     : "";
+  const marquee = ["CLING PICKS", "STICK BY YOUR STYLE", "BUDGET FASHION FINDS", "AS AN AMAZON ASSOCIATE WE EARN FROM QUALIFYING PURCHASES"]
+    .concat(["CLING PICKS", "STICK BY YOUR STYLE", "BUDGET FASHION FINDS"])
+    .map((w) => `<span>${w}</span><span class="dot">&bull;</span>`)
+    .join("");
   return `<footer class="site-footer">
+  ${comingSoonHtml}
+  <div class="tape-marquee tape-marquee-footer" aria-hidden="true"><div class="tape-marquee-track">${marquee}</div></div>
   <div class="wrap">
-    ${comingSoonHtml}
-    <p>© ${new Date().getFullYear()} ${SITE_NAME}. As an Amazon Associate we earn from qualifying purchases. See <a href="about.html">disclosure</a>. Enjoying the guides? <a href="support.html">Buy us a coffee</a>.</p>
+    <p>&copy; ${new Date().getFullYear()} Cling Picks &middot; As an Amazon Associate we earn from qualifying purchases &middot; <a href="about.html">Disclosure</a></p>
   </div>
 </footer>`;
 }
@@ -131,7 +142,7 @@ export function articleCard({ slug, title, excerpt, date, category, readTime, im
   return `<div class="article-card" data-search-title="${title.toLowerCase()}">
   <div class="thumb ${image ? "" : "no-photo"}" ${thumbStyle(image)}>${aiBadgeSmall(imageIsAI)}</div>
   <div class="card-body">
-    <div class="eyebrow">${category || "Guide"}</div>
+    <div class="eyebrow">${category || "Picks"}</div>
     <h3><a href="articles/${slug}.html">${title}</a></h3>
     <p class="excerpt">${excerpt}</p>
     <div class="meta"><span>${readTime}</span><span>${date}</span></div>
