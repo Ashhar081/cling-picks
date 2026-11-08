@@ -96,6 +96,23 @@ function footer(comingSoonText) {
 </footer>`;
 }
 
+
+const tiltScript = `<script>
+(function() {
+  const els = document.querySelectorAll('.article-card, .shop-pick-item, .category-strip a, .side-nav');
+  if (!window.matchMedia('(hover: hover)').matches) return;
+  els.forEach(function(el) {
+    el.addEventListener('mousemove', function(e) {
+      const r = el.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width - .5;
+      const y = (e.clientY - r.top) / r.height - .5;
+      el.style.transform = 'perspective(800px) rotateY(' + (x * 12).toFixed(1) + 'deg) rotateX(' + (-y * 12).toFixed(1) + 'deg) translateZ(10px)';
+    });
+    el.addEventListener('mouseleave', function() { el.style.transform = ''; });
+  });
+})();
+</script>`;
+
 export const sidebarToggleScript = `<script>
 (function() {
   const btn = document.getElementById('sidebar-toggle');
@@ -123,6 +140,7 @@ ${header()}
 </div>
 ${footer(comingSoonText)}
 ${sidebarToggleScript}
+${tiltScript}
 ${extraScript}
 </body>
 </html>`;
