@@ -20,7 +20,7 @@ Its outsole and midsole are built for daily walking: campus commutes, metro ride
   <div class="label">Best for daily wear</div>
   <div class="name">Campus Roar Sneakers (White/Green)</div>
   <p>The safer pick if the shoe has to survive daily commutes and still look good with everything. Regularly reviewed among the best sneakers under Rs 1,000 in India.</p>
-  <a class="buy" href="https://www.amazon.in/dp/B0FCYPC91V?tag=YOURTAG-21" rel="nofollow sponsored" target="_blank">Check price on Amazon</a>
+  <a class="buy" href="https://www.amazon.in/dp/B0FCYPC91V?tag=clingpicks-21" rel="nofollow sponsored" target="_blank">Check price on Amazon</a>
 </div>
 
 ## Campus OG-23 Pro: The Clean Minimal Look
@@ -33,7 +33,7 @@ If your wardrobe is more western-casual than sporty, this is the one that looks 
   <div class="label">Best for clean style</div>
   <div class="name">Campus OG-23 PRO Sneakers (White/Light Grey)</div>
   <p>The pick if a neat, minimal white sneaker matters more than max cushioning. Check current sizes and price on the listing.</p>
-  <a class="buy" href="https://www.amazon.in/dp/B0F8R2YP4C?tag=YOURTAG-21" rel="nofollow sponsored" target="_blank">Check price on Amazon</a>
+  <a class="buy" href="https://www.amazon.in/dp/B0F8R2YP4C?tag=clingpicks-21" rel="nofollow sponsored" target="_blank">Check price on Amazon</a>
 </div>
 
 ## The Verdict

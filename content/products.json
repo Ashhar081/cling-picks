@@ -1,5 +1,5 @@
 {
-  "_instructions": "Only real, search-verified Amazon.in ASINs. Replace YOURTAG-21 with the real Associates tag after approval. Prices are approximations from listings/videos; verify live before an article goes live.",
+  "_instructions": "Only real, search-verified Amazon.in ASINs. Replace clingpicks-21 with the real Associates tag after approval. Prices are approximations from listings/videos; verify live before an article goes live.",
   "products": [
     {
       "id": "ritu-collection-kurta-palazzo-set",
@@ -15,7 +15,7 @@
         "Sleeve": "3/4 sleeve",
         "Budget": "Under Rs 500 with coupons"
       },
-      "url": "https://www.amazon.in/dp/B09P7373PG?tag=YOURTAG-21",
+      "url": "https://www.amazon.in/dp/B09P7373PG?tag=clingpicks-21",
       "image": ""
     },
     {
@@ -31,7 +31,7 @@
         "Use": "Everyday casual",
         "Budget": "Under Rs 1,000"
       },
-      "url": "https://www.amazon.in/dp/B0FCYPC91V?tag=YOURTAG-21",
+      "url": "https://www.amazon.in/dp/B0FCYPC91V?tag=clingpicks-21",
       "image": ""
     },
     {
@@ -47,7 +47,7 @@
         "Use": "Everyday casual",
         "Line": "Campus OG-23 PRO"
       },
-      "url": "https://www.amazon.in/dp/B0F8R2YP4C?tag=YOURTAG-21",
+      "url": "https://www.amazon.in/dp/B0F8R2YP4C?tag=clingpicks-21",
       "image": ""
     }
   ]

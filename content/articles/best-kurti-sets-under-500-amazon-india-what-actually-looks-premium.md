@@ -20,7 +20,7 @@ A good compromise many buyers land on is a rayon kurta and palazzo paired with a
   <div class="label">Budget pick</div>
   <div class="name">Ritu Collection Women's Rayon Printed Kurta, Palazzo & Dupatta Set</div>
   <p>A three-piece set in the fabric combination this guide recommends: rayon kurta and palazzo with a cotton malmal dupatta, 3/4 sleeves, and coupon pricing that regularly brings it under Rs 500.</p>
-  <a class="buy" href="https://www.amazon.in/dp/B09P7373PG?tag=YOURTAG-21" rel="nofollow sponsored" target="_blank">Check price on Amazon</a>
+  <a class="buy" href="https://www.amazon.in/dp/B09P7373PG?tag=clingpicks-21" rel="nofollow sponsored" target="_blank">Check price on Amazon</a>
 </div>
 
 ## Three Details That Reveal a Cheap Set in the Listing
